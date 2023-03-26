@@ -24,6 +24,6 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) =>{
     message: 'Internal server error',
   })
 }) 
-app.listen(process.env.PORT, () => {
+app.listen(3333, () => {
 })
 
