@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon src/server.ts",
     "vercel-build": "npx prisma migrate deploy",
-    "build": "tsup src"
+    "build": "tsup src",
+    "postinstall": "prisma generate || true"
   },
   "keywords": [],
   "author": "",
