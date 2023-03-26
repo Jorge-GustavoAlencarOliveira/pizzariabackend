@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "builds": 
+  "builds": [
     {
       "src": "src/server.ts",
       "use": "@vercel/node"
-    },
-  "routes": 
+    }
+  ],
+  "routes":[
     {
       "src": "/(.*)",
       "dest": "src/server.ts"
-    },
+    }
+  ], 
   "env":{
     "DATABASE_URL": "postgresql://postgres:admin@localhost:5432/pizzaria?schema=public",
     "JWT_SECRET": "d6e72241d7bf278055bbd411fc52fa95",
